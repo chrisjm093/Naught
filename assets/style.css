@@ -1,0 +1,36 @@
+/* header */
+#header-container {
+background-color: #048C83; 
+padding: .5em 0em .5em 0;  
+border-bottom: 1px, firebrick, solid; 
+}
+header {
+    color: #EBFCE4;
+    margin-left: 2em;
+    font-family: 'Hind Siliguri', sans-serif;;
+    font-weight: bold;
+    font-size: x-large;
+    
+    ;
+}
+
+.fa-virus {
+    color: firebrick;
+}
+/* body styling */
+body {
+    background-color: #E4D359;
+}
+
+.statistic-board {
+    font-family: 'Hind Siliguri', sans-serif;
+    background-color: #EBFCE4;
+    border-color: firebrick !important;
+    margin-top: 1em;
+    padding: 1em 0em 0em 1em;
+}
+
+#stat-display {
+    max-width: 15em;
+    margin-left: 2em;
+}

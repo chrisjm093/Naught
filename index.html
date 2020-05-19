@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <title> Naught</title>
+</head>
+<body>
+    <div id="header-container" class="container-fluid">
+        <header><i class="fas fa-virus"></i>Naught</header>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div id="location-display" class="statistic-board container border col-4">
+                <div class="container ">
+                    <h1 id=" location " class="display-4">Location</h1>
+                    <p id=" choosen-date " class="lead">Month XX, 8888</p>
+                </div>
+            </div> 
+            <div id="stat-display" class="statistic-board container border col-8">
+                <p id=" infected " class=" stats ">Total Infected:</p>
+                <p id=" dead " class=" stats ">Total Deaths:</p>
+                <p id=" recovered " class=" stats ">Total Recovered:</p>
+                <p id=" cases-today" class=" stats">New Cases this day:</p>
+                <p id=" deaths-today" class=" stats ">Deaths this day:</p>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+</body>
+</html>
+
+
+<!-- 
+pseudocode:
+
+    Major Tasks:
+        1. wireframe HTML and style CSS
+            *jumbotron to display country/state name and specified date researching
+                *area for coronavirus statistics
+            *area for news headline list
+                header for headline section specifying which publication is being researched
+            
+            *form input for specific date
+                +constrained form elements
+                +dropdown calendars
+
+            *range slider for specific date
+
+            *dropdown for which publication to source from
+
+            *dropdown to specify which national data to source from
+                *submenu for individual us state's data
+
+            *News source banner
+
+            *<ol> of headlines from the day
+                each list element has headline and biline
+        
+        (*) feature that toggles 1918 spanish flu data
+           
+            *start page with global statistics
+
+        2.Javascript
+
+            *source API for covid19 information
+                + ajax function to call information
+                
+                + Function to generate html information from statistics for specified date and location
+               
+                + Function to write information to page from specified date
+
+
+            *source APIs for news headline sources
+               -> wall street journal
+                    + ajax function to pull archived headlines and articles 
+
+               -> wa po
+                    + ajax function to pull archived headlines and articles
+
+               -> huffington post
+                    + ajax function to pull archived headlines and articles
+
+               -> AP
+                    + ajax function to pull archived headlines and articles
+                
+            *Date specification functions
+                + Function to specify a specific date from form input
+                    -button click
+                    -send information to slider and move it accordingily
+                    -send information to publication choosen function
+
+
+                + Function to pull date from range slider
+                    mouse down event
+                    mouse up event
+                    send information to date input and 
+                        write in fields
+                
+                + Function to append a list of headlines from the choosen publication on the set date
+                        if publication choosen after date is choosen, mouse up event to search from date
+
+
+                + function to aggrigate publication data into format for writing to HTML
+                    append ordered list from whatever publication is choosen
+            + function to post a popover
+                link click
+                write from hidden HTML element.
+
+           (+) function to build pagination of all articles available from ajax call
+
+                
+ color pallett
+     
+    firebrick
+
+    #F38B04 dark orange
+
+    #EBFCE4 light goldenrod yellow (also a light blue color)
+
+    #048C83 dark cyanne
+
+    #E4D359 khaki
+
+             -->

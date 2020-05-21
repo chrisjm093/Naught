@@ -15,15 +15,33 @@
         <header><i class="fas fa-virus"></i>Naught</header>
     </div>
 
-    <div class="container">
-        <div class="row">
+    <div class="container-fluid">
+       <div class="row">
+             <div id="date-display" class="statistic-board container border col-4">
+                <p class="stats">Select a valid date from 12/31/2019 to present.</p>
+                <div id="date-form-container">
+                    <label for="select-date">Select Date:</label>
+                    <input type="date" id="select-date" value="#" min="2019-12-31">
+                </div>
+               
+                <h1 id=" choosen-date " class="display-4">Month XX, 8888</h1>
+            </div>
             <div id="location-display" class="statistic-board container border col-4">
                 <div class="container ">
+                    
+                        <p class="stats">Select a country to see SARS-CoV-2 statistics</p>
+                        <select class="country-dropdown">
+                            <option value="">Select Country</option>
+                            <option value="USA">USA</option>
+                            <option value="china">China</option>
+                            <option value="italy">Italy</option>
+                        </select>
+                       
                     <h1 id=" location " class="display-4">Location</h1>
-                    <p id=" choosen-date " class="lead">Month XX, 8888</p>
+                    
                 </div>
             </div> 
-            <div id="stat-display" class="statistic-board container border col-8">
+            <div id="stat-display" class="statistic-board container border col-4">
                 <p id=" infected " class=" stats ">Total Infected:</p>
                 <p id=" dead " class=" stats ">Total Deaths:</p>
                 <p id=" recovered " class=" stats ">Total Recovered:</p>
@@ -32,6 +50,7 @@
             </div>
         </div>
     </div>
+
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
@@ -64,7 +83,7 @@ pseudocode:
             *News source banner
 
             *<ol> of headlines from the day
-                each list element has headline and biline
+                each list element has headline and byline
         
         (*) feature that toggles 1918 spanish flu data
            

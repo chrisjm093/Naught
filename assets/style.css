@@ -7,7 +7,7 @@ border-bottom: 1px, firebrick, solid;
 header {
     color: #EBFCE4;
     margin-left: 2em;
-    font-family: 'Hind Siliguri', sans-serif;;
+    font-family: 'Hind Siliguri', sans-serif;
     font-weight: bold;
     font-size: x-large;
     
@@ -27,10 +27,16 @@ body {
     background-color: #EBFCE4;
     border-color: firebrick !important;
     margin-top: 1em;
+    margin-right: .5em;
+    margin-left: .5em;
     padding: 1em 0em 0em 1em;
+
 }
 
 #stat-display {
-    max-width: 15em;
-    margin-left: 2em;
+    max-width: 18em;
+}
+#choosen-date {
+    font-family: 'Hind Siliguri', sans-serif;;
+
 }

@@ -22,7 +22,7 @@ body {
     background-color: #E4D359;
 }
 
-.statistic-board {
+.cell-style {
     font-family: 'Hind Siliguri', sans-serif;
     background-color: #EBFCE4;
     border-color: firebrick !important;
@@ -40,3 +40,14 @@ body {
     font-family: 'Hind Siliguri', sans-serif;;
 
 }
+
+.publications {
+    margin-left: 22%;
+    list-style-type: none;
+    
+}
+.pub-title{
+    text-align: center;
+    font-family: 'Hind Siliguri', sans-serif;
+}
+

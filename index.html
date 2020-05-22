@@ -17,7 +17,7 @@
 
     <div class="container-fluid">
        <div class="row">
-             <div id="date-display" class="statistic-board container border col-4">
+             <div id="date-display" class="cell-style container border col-4">
                 <p class="stats">Select a valid date from 12/31/2019 to present.</p>
                 <div id="date-form-container">
                     <label for="select-date">Select Date:</label>
@@ -26,13 +26,13 @@
                
                 <h1 id=" choosen-date " class="display-4">Month XX, 8888</h1>
             </div>
-            <div id="location-display" class="statistic-board container border col-4">
+            <div id="location-display" class="cell-style container border col-4">
                 <div class="container ">
                     
                         <p class="stats">Select a country to see SARS-CoV-2 statistics</p>
                         <select class="country-dropdown">
                             <option value="">Select Country</option>
-                            <option value="USA">USA</option>
+                            <option value="usa">USA</option>
                             <option value="china">China</option>
                             <option value="italy">Italy</option>
                         </select>
@@ -41,12 +41,30 @@
                     
                 </div>
             </div> 
-            <div id="stat-display" class="statistic-board container border col-4">
+            <div id="stat-display" class="cell-style container border col-4">
                 <p id=" infected " class=" stats ">Total Infected:</p>
                 <p id=" dead " class=" stats ">Total Deaths:</p>
                 <p id=" recovered " class=" stats ">Total Recovered:</p>
                 <p id=" cases-today" class=" stats">New Cases this day:</p>
                 <p id=" deaths-today" class=" stats ">Deaths this day:</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row justify-content-mid-center">
+            <div class="col cell-style border col-lg-4">
+                <h3 class="pub-title">Select a Publication</h3>
+                    <ul class="publications">
+                        <li><button id="nyt">New York Times</button></li>
+                        <li><button id="npr">NPR</button></li>
+                        <li><button id="pbs">PBS</button></li>
+                    </ul>
+            </div>
+            <div class="col-lg-8 cell-style border">
+                <ul class="articles">
+                     
+                </ul>>
             </div>
         </div>
     </div>

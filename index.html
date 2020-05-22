@@ -41,7 +41,7 @@
                     
                 </div>
             </div> 
-            <div id="stat-display" class="cell-style container border col-4">
+            <div id="stat-display" class="cell-style container border col">
                 <p id=" infected " class=" stats ">Total Infected:</p>
                 <p id=" dead " class=" stats ">Total Deaths:</p>
                 <p id=" recovered " class=" stats ">Total Recovered:</p>
@@ -49,11 +49,9 @@
                 <p id=" deaths-today" class=" stats ">Deaths this day:</p>
             </div>
         </div>
-    </div>
-
-    <div class="container-fluid">
-        <div class="row justify-content-mid-center">
-            <div class="col cell-style border col-lg-4">
+   
+        <div class="row">
+            <div class="col container cell-style border col-md-4">
                 <h3 class="pub-title">Select a Publication</h3>
                     <ul class="publications">
                         <li><button id="nyt">New York Times</button></li>
@@ -61,10 +59,14 @@
                         <li><button id="pbs">PBS</button></li>
                     </ul>
             </div>
-            <div class="col-lg-8 cell-style border">
-                <ul class="articles">
-                     
-                </ul>>
+            <div class="col container col cell-style border">
+                <div class="pubs-content">
+                    
+                    <h3 id="publication-header" class="pub-title">Publication Header</h3>
+                
+                    <ul class="articles"> 
+                    </ul>
+                </div>
             </div>
         </div>
     </div>

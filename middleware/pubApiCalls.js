@@ -1,0 +1,10 @@
+function nytArticleCall() {
+
+
+}
+
+
+function guardianArticleCall() {
+
+
+}

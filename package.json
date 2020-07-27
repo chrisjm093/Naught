@@ -1,0 +1,29 @@
+{
+  "name": "naught",
+  "version": "1.0.0",
+  "description": "Naught is a covid stat tracking dashboard that display news articles and covid statistic by state and nationally.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chrisjm093/Naught.git"
+  },
+  "keywords": [
+    "covid19",
+    "statistics",
+    "headlines"
+  ],
+  "author": "Christopher Marti",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chrisjm093/Naught/issues"
+  },
+  "homepage": "https://github.com/chrisjm093/Naught#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-session": "^1.17.1"
+  }
+}

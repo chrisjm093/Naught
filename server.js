@@ -13,10 +13,7 @@ app.use(express.json());
 app.use(express.static("public"));
 
 //Required routes
-app.use(require("./public/js/script"))
-//app.use(require("./controllers/dateSearch"));
-app.use(require("./controllers/pubApiCalls"));
-app.use(require("./controllers/stateApiCall"));
+app.use(require("./routes/htmlRoutes"))
 
 app.listen(PORT, ()=>{
   console.log("Listening on PORT: " + PORT);

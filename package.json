@@ -24,6 +24,7 @@
   "homepage": "https://github.com/chrisjm093/Naught#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "express-session": "^1.17.1"
+    "express-session": "^1.17.1",
+    "nodemon": "^2.0.4"
   }
 }

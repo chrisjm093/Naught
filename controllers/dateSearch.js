@@ -1,10 +1,11 @@
-//   $('#select-date').change( ()=>{
-//     const date = new Date($('#select-date').val());
-//     console.log(date);
+$(document).ready(()=>{
+  $('#select-date').change( function(event){
+      const date = ($(this).val());
+      console.log(date);
+    console.log(event.target.value)
+  
+    });
+  });
 
-//   })
+module.exports = date;
 
-
-
-
-//module.exports= date;

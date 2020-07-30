@@ -18,73 +18,73 @@
     <div class="container-fluid">
        <div class="row">
              <div id="date-display" class="cell-style container border col-4">
-                <p class="stats">Select a date from 12/31/2019 to present.</p>
+                <h4 class="stats">Select a date and location.</h4>
                 <div id="date-form-container">
                     <label for="select-date">Select Date:</label>
-                    <input type="date" id="select-date" min="2019-12-31">
+                    <input type="date" id="select-date" value="2019-12-31" min="2019-12-31">
+                    <br>
+                    <label for="select-state">Select Location:</label>
+                    <select id= "select-state" class="state-dropdown">
+                        <option value="us">National</option>
+                        <option value="al">Alabama</option>
+                        <option value="ak">Alaska</option>
+                        <option value="az">Arizona</option>
+                        <option value="ar">Arkansas</option>
+                        <option value="ca">California</option>
+                        <option value="co">Colorado</option>
+                        <option value="ct">Connecticut</option>
+                        <option value="de">Delaware</option>
+                        <option value="fl">Florida</option>
+                        <option value="ga">Georgia</option>
+                        <option value="hi">Hawaii</option>
+                        <option value="id">Idaho</option>
+                        <option value="il">Illinois</option>
+                        <option value="in">Indiana</option>
+                        <option value="ia">Iowa</option>
+                        <option value="ks">Kansas</option>
+                        <option value="ky">Kentucky</option>
+                        <option value="la">Louisiana</option>
+                        <option value="me">Maine</option>
+                        <option value="md">Maryland</option>
+                        <option value="ma">Massachusetts</option>
+                        <option value="mi">Michigan</option>
+                        <option value="mn">Minnesota</option>                            
+                        <option value="ms">Mississippi</option>
+                        <option value="mo">Missouri</option>
+                        <option value="mt">Montana</option>
+                        <option value="ne">Nebraska</option>
+                        <option value="nv">Nevada</option>
+                        <option value="nh">New Hampshire</option>
+                        <option value="nj">New Jersey</option>
+                        <option value="nm">New Mexico</option>
+                        <option value="ny">New York</option>
+                        <option value="nc">North Carolina</option>
+                        <option value="nd">North Dakota</option>
+                        <option value="oh">Ohio</option>
+                        <option value="ok">Oklahoma</option>
+                        <option value="or">Oregon</option>
+                        <option value="pa">Pennsylvania</option>
+                        <option value="ri">Rhode Island</option>
+                        <option value="sc">South Carolina</option>
+                        <option value="sd">South Dakota</option>
+                        <option value="tn">Tennessee</option>
+                        <option value="tx">Texas</option>
+                        <option value="ut">Utah</option>
+                        <option value="vt">Vermont</option>
+                        <option value="va">Virginia</option>
+                        <option value="wa">Washington</option>
+                        <option value="wi">Wisconsin</option>
+                        <option value="wy">Wyoming</option>
+
+                    </select>
+                    <br>
+                    <button id="get-stats" class="btn" type="button">Get Stats</button>
                 </div>
-               
-                <h1 id=" chosen-date " class="display-4">Month XX, 8888</h1>
             </div>
             <div id="location-display" class="cell-style container border col-4">
+                
                 <div class="container ">
-                    
-                        <p class="stats">Select to see state or national SARS-CoV-2 statistics</p>
-                        <select class="country-dropdown">
-                            <option value="usa">National</option>
-                            <option value="al">Alabama</option>
-                            <option value="ak">Alaska</option>
-                            <option value="az">Arizona</option>
-                            <option value="ar">Arkansas</option>
-                            <option value="ca">California</option>
-                            <option value="co">Colorado</option>
-                            <option value="ct">Connecticut</option>
-                            <option value="de">Delaware</option>
-                            <option value="fl">Florida</option>
-                            <option value="ga">Georgia</option>
-                            <option value="hi">Hawaii</option>
-                            <option value="id">Idaho</option>
-                            <option value="il">Illinois</option>
-                            <option value="in">Indiana</option>
-                            <option value="ia">Iowa</option>
-                            <option value="ks">Kansas</option>
-                            <option value="ky">Kentucky</option>
-                            <option value="la">Louisiana</option>
-                            <option value="me">Maine</option>
-                            <option value="md">Maryland</option>
-                            <option value="ma">Massachusetts</option>
-                            <option value="mi">Michigan</option>
-                            <option value="mn">Minnesota</option>                            
-                            <option value="ms">Mississippi</option>
-                            <option value="mo">Missouri</option>
-                            <option value="mt">Montana</option>
-                            <option value="ne">Nebraska</option>
-                            <option value="nv">Nevada</option>
-                            <option value="nh">New Hampshire</option>
-                            <option value="nj">New Jersey</option>
-                            <option value="nm">New Mexico</option>
-                            <option value="ny">New York</option>
-                            <option value="nc">North Carolina</option>
-                            <option value="nd">North Dakota</option>
-                            <option value="oh">Ohio</option>
-                            <option value="ok">Oklahoma</option>
-                            <option value="or">Oregon</option>
-                            <option value="pa">Pennsylvania</option>
-                            <option value="ri">Rhode Island</option>
-                            <option value="sc">South Carolina</option>
-                            <option value="sd">South Dakota</option>
-                            <option value="tn">Tennessee</option>
-                            <option value="tx">Texas</option>
-                            <option value="ut">Utah</option>
-                            <option value="vt">Vermont</option>
-                            <option value="va">Virginia</option>
-                            <option value="wa">Washington</option>
-                            <option value="wi">Wisconsin</option>
-                            <option value="wy">Wyoming</option>
-
-                        </select>
                        
-                    <h1 id=" location " class="display-4">Location</h1>
                     
                 </div>
             </div> 
@@ -124,7 +124,7 @@
         </div>
     </div>
 </footer>   
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.js" integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script> -->
     <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script> -->
     <script type="text/javascript" src="../js/script.js"></script>

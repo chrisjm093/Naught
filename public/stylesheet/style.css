@@ -33,6 +33,12 @@ body {
 
 }
 
+.btn {
+    background-color: #048C83;
+    margin-left: 2em;
+    color: white;
+
+}
 #choosen-date {
     font-family: 'Hind Siliguri', sans-serif;;
 

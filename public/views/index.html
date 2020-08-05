@@ -81,19 +81,23 @@
                     <button id="get-stats" class="btn" type="button">Get Stats</button>
                 </div>
             </div>
-            <div id="location-display" class="cell-style container border col-4">
+            <div id="stat-display-1" class="cell-style container border col-4">
                 
-                <div class="container ">
-                       
+                <div class="container">
+                <p class="stats">Total Cases: &nbsp &nbsp <span id="infected"></span></p>
+                <p class="stats">Total Recovered:  &nbsp &nbsp <span id="recovered"></span></p>
+                <p class="stats">Total Deaths: &nbsp &nbsp <span id="dead"></span></p>
+                <p class="stats">New Cases this day:  &nbsp &nbsp <span id="cases-today"></span></p>
+                <p class="stats">Deaths this day:  &nbsp &nbsp <span id="deaths-today"></span></p>   
                     
                 </div>
             </div> 
             <div id="stat-display" class="cell-style container border col">
-                <p id=" infected " class=" stats ">Total Infected:</p>
-                <p id=" dead " class=" stats ">Total Deaths:</p>
-                <p id=" recovered " class=" stats ">Total Recovered:</p>
-                <p id=" cases-today" class=" stats">New Cases this day:</p>
-                <p id=" deaths-today" class=" stats ">Deaths this day:</p>
+                <p class="stats">Hospitalized as of this day: &nbsp &nbsp <span id="hospitalized"></span></p>
+                <p class="stats">In ICU as of this day: &nbsp &nbsp <span id="in-icu"></span></p>
+                <p class="stats">Total Tested:  &nbsp &nbsp <span id="total-tested"></span></p>
+                <p class="stats">Total Positive Tests:  &nbsp &nbsp <span id="positive"></span></p>
+                <p class="stats">Total Negative Tests:  &nbsp &nbsp <span id="negative"></span></p>   
             </div>
         </div>
    

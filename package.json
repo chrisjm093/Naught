@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/chrisjm093/Naught#readme",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "express-session": "^1.17.1",
     "moment": "^2.27.0",
     "nodemon": "^2.0.4"
